@@ -1,0 +1,51 @@
+.report-list {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-image: url('../assets/police_line.jpg'); /* Set the background image */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  color: #fff; /* Set text color to white for better readability */
+}
+
+.report-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background to make text more readable */
+  border-radius: 10px;
+}
+
+.report-card {
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for each report card */
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.report-card p {
+  margin: 5px 0;
+}
+
+.map-container {
+  margin-top: 20px;
+}
+
+.error {
+  color: red;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .report-container {
+    grid-template-columns: 1fr; /* Stack the reports vertically on smaller screens */
+  }
+}

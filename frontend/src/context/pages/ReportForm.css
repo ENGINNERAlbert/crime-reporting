@@ -1,0 +1,129 @@
+/* General Styles */
+.report-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('/src/assets/crime-scene.jpg'); /* Ensure this path is correct */
+  background-size: cover;
+  background-position: center center;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #fff; /* Ensures text is readable on the background */
+}
+
+.report-form-container {
+  background-color: rgba(255, 255, 255, 0.85); /* Light transparency for form background */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 100%;
+  color: #333;
+}
+
+.form-title {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #f4f6f7; /* Slight contrast for input fields */
+}
+
+textarea.input-field {
+  height: 150px;
+  resize: none;
+}
+
+label {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  display: block;
+  color: #2c3e50;
+}
+
+.location-info {
+  font-size: 1rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.location-error {
+  font-size: 1rem;
+  color: #e74c3c;
+  margin-bottom: 15px;
+}
+
+.submit-btn {
+  background-color: #27ae60;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:disabled {
+  background-color: #7f8c8d;
+}
+
+.submit-btn:hover {
+  background-color: #2ecc71;
+}
+
+.error, .success {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.error {
+  color: #e74c3c;
+}
+
+.success {
+  color: #27ae60;
+}
+
+/* Additional Enhancements */
+.report-form-container {
+  backdrop-filter: blur(10px); /* Optional: Adds blur to the background */
+}
+
+.input-field:focus {
+  border-color: #27ae60; /* Green border on input focus */
+  outline: none;
+}
+
+.submit-btn:active {
+  transform: scale(0.98); /* Slight click effect */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .report-form-container {
+    padding: 30px;
+  }
+
+  .form-title {
+    font-size: 1.8rem;
+  }
+
+  .input-field, .submit-btn {
+    font-size: 1rem;
+  }
+}

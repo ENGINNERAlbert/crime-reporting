@@ -1,0 +1,108 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* App Container */
+.App {
+  text-align: center;
+}
+
+/* Kenyan-Themed Header */
+.App-header {
+  background: linear-gradient(to right, #006600, #ffffff, #ff0000); /* Kenyan flag colors */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(12px + 2vmin);
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+/* Kenyan Flag Colors for Key Elements */
+.kenyan-theme {
+  color: #006600; /* Green */
+  font-weight: bold;
+}
+
+/* Buttons */
+.button {
+  background-color: #ff0000; /* Red */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #cc0000; /* Darker Red */
+}
+
+/* Animated Kenyan-Themed Banner */
+.animated-banner {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Text Styling */
+.home-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.home-intro, .home-closing {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+}
+
+.home-feature-title, .home-why-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f0f0f0;
+  margin-top: 20px;
+}
+
+.home-features, .home-why {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.home-features li, .home-why li {
+  margin: 10px 0;
+  color: #f0f0f0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(8px + 2vmin);
+    padding: 10px;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

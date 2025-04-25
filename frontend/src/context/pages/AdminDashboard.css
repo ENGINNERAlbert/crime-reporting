@@ -1,0 +1,96 @@
+/* src/styles/AdminDashboard.css */
+
+.admin-dashboard {
+    min-height: 100vh;
+    padding: 2rem;
+    background: url('../assets/badge-icon2.png') no-repeat center center;
+    background-size: 50% auto; /* Resizes background to 50% of the container's width */
+    background-position: center;
+    background-color: #f4f4f4; /* Set background color to a soft grey */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .admin-dashboard .dashboard-content {
+    width: 100%;
+    max-width: 1200px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly white background for content */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow to lift the panel */
+    color: #333; /* Darker text for better readability */
+  }
+  
+  .admin-dashboard h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333; /* Dark text for header */
+    text-shadow: none; /* Removed shadow for better clarity */
+  }
+  
+  .admin-dashboard table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+  }
+  
+  .admin-dashboard th,
+  .admin-dashboard td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Lighter border for readability */
+    color: #333; /* Dark text for table content */
+  }
+  
+  .admin-dashboard th {
+    background-color: #e0e0e0; /* Lighter header background */
+  }
+  
+  .admin-dashboard button {
+    margin: 0 0.3rem;
+    padding: 0.5rem 0.9rem;
+    background-color: #0077cc;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .admin-dashboard button:hover {
+    background-color: #005fa3;
+  }
+  
+  .admin-dashboard .reports-section {
+    margin-top: 3rem;
+  }
+  
+  .admin-dashboard .reports-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #333; /* Dark text for section headers */
+  }
+  
+  @media (max-width: 768px) {
+    .admin-dashboard table,
+    .admin-dashboard thead,
+    .admin-dashboard tbody,
+    .admin-dashboard th,
+    .admin-dashboard td,
+    .admin-dashboard tr {
+      display: block;
+    }
+  
+    .admin-dashboard td {
+      padding: 0.5rem;
+    }
+  
+    .admin-dashboard th {
+      display: none;
+    }
+  }
+  
